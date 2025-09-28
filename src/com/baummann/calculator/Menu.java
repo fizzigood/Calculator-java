@@ -34,27 +34,47 @@ public class Menu {
             switch (choice) {
                 case 1:
                     System.out.println("You selected " + options[0]);
-                    double[] numbers = new double[2];
-                    System.out.println("Enter the first number: ");
-                    numbers[0] = scanner.nextDouble();
-                    System.out.println("Enter the second number: ");
-                    numbers[1] = scanner.nextDouble();
+                        double[] numbers = new double[2];
+                        System.out.println("Enter the first number: ");
+                        numbers[0] = scanner.nextDouble();
+                        System.out.println("Enter the second number: ");
+                        numbers[1] = scanner.nextDouble();
 
-                    double result = Operations.addition(numbers);
-                    System.out.println("The result is: " + result);
+                        double result = Operations.addition(numbers);
+                        System.out.println("The result is: " + result);
                     break;
 
                     case 2:
                         System.out.println("You selected " + options[1]);
-                        // TODO: call Operations.subtraction()
+
+                            System.out.println("Enter the first number: ");
+                            double a = scanner.nextDouble();
+                            System.out.println("Enter the second number: ");
+                            double b = scanner.nextDouble();
+
+                            result = Operations.subtraction(a, b);
+                            System.out.println("The result is: " + result);
                         break;
                         case 3:
                             System.out.println("You selected " + options[2]);
-                            // TODO: call Operations.multiplication()
+
+                                System.out.println("Enter the first number: ");
+                                a = scanner.nextDouble();
+                                System.out.println("Enter the second number: ");
+                                b = scanner.nextDouble();
+
+                                result = Operations.multiplication(a, b);
+                                System.out.println("The result is: " + result);
                             break;
                             case 4:
                             System.out.println("You selected " + options[3]);
-                            // TODO: call Operations.division()
+                                System.out.println("Enter the first number: ");
+                                a = scanner.nextDouble();
+                                System.out.println("Enter the second number: ");
+                                b = scanner.nextDouble();
+
+                                result = Operations.division(a, b);
+                                System.out.println("The result is: " + result);
                             break;
 
                                 //Running turns false and the loop is ended
