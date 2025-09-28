@@ -34,8 +34,16 @@ public class Menu {
             switch (choice) {
                 case 1:
                     System.out.println("You selected " + options[0]);
-                    // TODO: call Operations.addition()
+                    double[] numbers = new double[2];
+                    System.out.println("Enter the first number: ");
+                    numbers[0] = scanner.nextDouble();
+                    System.out.println("Enter the second number: ");
+                    numbers[1] = scanner.nextDouble();
+
+                    double result = Operations.addition(numbers);
+                    System.out.println("The result is: " + result);
                     break;
+
                     case 2:
                         System.out.println("You selected " + options[1]);
                         // TODO: call Operations.subtraction()
